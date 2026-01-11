@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+=======
+p {
+  color: red;
+}
+
+.area-de-jogo{
+  border: solid 2px;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  background-color: black;
+}
+
+.area-item{
+  background-color: white;
+  padding: 20px;
+  border: solid 2px;
+}
+>>>>>>> d5210b5396aa810c1ea001af703224069cd696bd
