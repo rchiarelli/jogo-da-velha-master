@@ -1,22 +1,14 @@
-document.addEventListener('DOMContentLoaded', function(){
-    console.log('Carregado');
+document.addEventListener('DOMContentLoaded', function() {
 });
 
-const jogadorX = 'X'
-const jogadorO = 'O'
+let quadrados = document.querySelectorAll(".quadrados")
 
-let areaJogo = document.getElementsByClassName("area-item")
-
-console.log(areaJogo);
-
-let mouseAcima = function onmouseover(){
-    console.log('mouse passando');
-};
-
-let clicouAqui = function (){
-    console.log("clicado")
+for (let quadrado of quadrados) {
+    quadrado.addEventListener("click", function () {
+        if (quadrado.firstElementChild.textContent === "" || quadrado.firstElementChild.textContent === "O") {
+            quadrado.firstElementChild.textContent = "X"
+        } else if (quadrado.firstElementChild.textContent === "" || quadrado.firstElementChild.textContent === "X") {
+                quadrado.firstElementChild.textContent = "O"
+        }
+    });
 }
-
-areaJogo.addEventListener("mousemove", mouseAcima());
-
-areaJogo.addEventListener("click", clicouAqui());
