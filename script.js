@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    let quadrados = document.querySelectorAll(".quadrados")
+    let quadrados = document.querySelectorAll(".quadrados");
     
     for (let quadrado of quadrados) {
         quadrado.addEventListener("click", function() {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 quadrado.firstElementChild.textContent = "X"
             } else if (quadrado.firstElementChild.textContent === "" || quadrado.firstElementChild.textContent === "X") {
                 quadrado.firstElementChild.textContent = "O"
-            }
+            };
         });
-    }
+    };
 });
