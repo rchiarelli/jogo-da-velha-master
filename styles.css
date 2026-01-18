@@ -7,6 +7,7 @@
   grid-template-rows: repeat(3, 150px);
   background-color: black;
   justify-content: center;
+  position: relative;
 }
 
 .quadrados{
@@ -19,3 +20,15 @@
     font-size: 70px;
   }
 }
+
+.traco {
+    font-size: 700px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    position: absolute;
+    transform: translate(220px, -245px) rotate(135deg);
+    display: none;
+    color: red;
+  }
