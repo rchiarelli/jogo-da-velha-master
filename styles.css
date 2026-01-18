@@ -1,5 +1,4 @@
-
-.area-de-jogo{
+.area-de-jogo {
   border: solid 2px;
   display: grid;
   gap: 3px;
@@ -10,7 +9,7 @@
   position: relative;
 }
 
-.quadrados{
+.quadrados {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -22,13 +21,13 @@
 }
 
 .traco {
-    font-size: 700px;
-    font-weight: 100;
-    padding: 0;
-    margin: 0;
-    display: inline;
-    position: absolute;
-    transform: translate(220px, -245px) rotate(135deg);
-    display: none;
-    color: red;
-  }
+  font-size: 700px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+  display: inline;
+  position: absolute;
+  transform: translate(220px, -240px) rotate(135deg);
+  color: red;
+  display: none;
+}
